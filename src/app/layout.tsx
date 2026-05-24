@@ -45,6 +45,9 @@ export const metadata: Metadata = {
     index: true,
     follow: true,
   },
+  verification: {
+    google: "xq2crjzHDQlCuGw9SQvXkPJ4S5juDATcckLGnfhn8aw",
+  },
 };
 
 const personSchema = {

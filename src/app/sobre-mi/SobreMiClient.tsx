@@ -1,5 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
+import Image from "next/image";
 import Link from "next/link";
 
 const fade = { hidden: { opacity: 0, y: 24 }, show: { opacity: 1, y: 0 } };
@@ -50,11 +51,21 @@ export default function SobreMi() {
         </motion.div>
       </section>
 
-      {/* HISTORIA */}
+      {/* FOTO + HISTORIA */}
       <section style={{ background: "#F8F4EE", padding: "6rem 2rem" }}>
-        <div style={{ maxWidth: "760px", margin: "0 auto" }}>
-          <motion.div variants={fade} initial="hidden" whileInView="show" viewport={{ once: true }} transition={{ duration: .7 }}>
-
+        <div style={{ maxWidth: "960px", margin: "0 auto 4rem", display: "grid", gridTemplateColumns: "1fr 2fr", gap: "4rem", alignItems: "flex-start" }}>
+          <motion.div variants={fade} initial="hidden" whileInView="show" viewport={{ once: true }} transition={{ duration: .7 }}
+            style={{ position: "relative", minHeight: "500px", overflow: "hidden" }}>
+            <Image
+              src="/images/veronica-vestido-negro.png"
+              alt="Verónica Perozo — Autora venezolana radicada en Florida"
+              fill
+              style={{ objectFit: "cover", objectPosition: "center top" }}
+              sizes="(max-width: 768px) 100vw, 320px"
+              priority
+            />
+          </motion.div>
+          <motion.div variants={fade} initial="hidden" whileInView="show" viewport={{ once: true }} transition={{ duration: .7, delay: .15 }}>
             <h2 style={{ fontFamily: "var(--font-serif, serif)", fontWeight: 300, fontSize: "clamp(1.6rem, 3.5vw, 2.5rem)", color: "#1E1510", marginBottom: "2rem", lineHeight: 1.2 }}>
               Llegué a Florida en septiembre de 2015.
             </h2>

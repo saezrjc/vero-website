@@ -1,5 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
+import Image from "next/image";
 import Link from "next/link";
 
 const fade = { hidden: { opacity: 0, y: 28 }, show: { opacity: 1, y: 0 } };
@@ -77,17 +78,27 @@ export default function Home() {
 
       {/* SOBRE MÍ PREVIEW */}
       <section style={{ background: "#F8F4EE", padding: "6rem 2rem" }}>
-        <div style={{ maxWidth: "800px", margin: "0 auto" }}>
-          <motion.div variants={fade} initial="hidden" whileInView="show" viewport={{ once: true }} transition={{ duration: .7 }}>
+        <div style={{ maxWidth: "960px", margin: "0 auto", display: "grid", gridTemplateColumns: "1fr 1fr", gap: "4rem", alignItems: "center" }}>
+          <motion.div variants={fade} initial="hidden" whileInView="show" viewport={{ once: true }} transition={{ duration: .7 }}
+            style={{ position: "relative", minHeight: "500px", overflow: "hidden" }}>
+            <Image
+              src="/images/vero-en-el-sofa.jpeg"
+              alt="Verónica Perozo — Autora y mentora de mujeres latinas"
+              fill
+              style={{ objectFit: "cover", objectPosition: "center top" }}
+              sizes="(max-width: 768px) 100vw, 480px"
+            />
+          </motion.div>
+          <motion.div variants={fade} initial="hidden" whileInView="show" viewport={{ once: true }} transition={{ duration: .7, delay: .2 }}>
             <p style={{ color: "#B8975A", fontSize: ".78rem", letterSpacing: ".2em", textTransform: "uppercase", marginBottom: "1rem" }}>Mi historia</p>
-            <h2 style={{ fontFamily: "var(--font-serif, serif)", fontWeight: 300, fontSize: "clamp(1.8rem, 4vw, 3rem)", color: "#1E1510", marginBottom: "1.5rem", lineHeight: 1.15 }}>
+            <h2 style={{ fontFamily: "var(--font-serif, serif)", fontWeight: 300, fontSize: "clamp(1.8rem, 3.5vw, 2.8rem)", color: "#1E1510", marginBottom: "1.5rem", lineHeight: 1.15 }}>
               Yo no te hablo desde la teoría.<br />
               <em>Te hablo desde una vida que tuve que ordenar.</em>
             </h2>
-            <p style={{ color: "#4A3728", lineHeight: 1.9, fontSize: "1.05rem", marginBottom: "1rem" }}>
+            <p style={{ color: "#4A3728", lineHeight: 1.9, fontSize: "1rem", marginBottom: "1rem" }}>
               Llegué a Florida en septiembre de 2015. Venezolana, inmigrante, madre, con una carrera construida en Venezuela — administración, recursos humanos, años en PDVSA — y todo por reconstruir.
             </p>
-            <p style={{ color: "#4A3728", lineHeight: 1.9, fontSize: "1.05rem", marginBottom: "2rem" }}>
+            <p style={{ color: "#4A3728", lineHeight: 1.9, fontSize: "1rem", marginBottom: "2rem" }}>
               Lo que comenzó como una forma de salir adelante se convirtió en una agencia de seguros, un libro publicado, materiales educativos y un programa de mentoría para mujeres que se parecen a la mujer que yo fui.
             </p>
             <Link href="/sobre-mi" style={{ color: "#B8975A", fontSize: ".85rem", letterSpacing: ".1em", textTransform: "uppercase", textDecoration: "none", borderBottom: "1px solid #B8975A", paddingBottom: ".2rem" }}>

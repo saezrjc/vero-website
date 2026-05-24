@@ -1,5 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
+import Image from "next/image";
 import Link from "next/link";
 
 const fade = { hidden: { opacity: 0, y: 24 }, show: { opacity: 1, y: 0 } };
@@ -56,21 +57,16 @@ export default function Libros() {
           <motion.div variants={fade} initial="hidden" whileInView="show" viewport={{ once: true }} transition={{ duration: .7 }}
             style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "4rem", alignItems: "center" }}>
 
-            {/* Book cover placeholder */}
-            <div style={{
-              background: "linear-gradient(135deg, #1E1510 0%, #2E1F15 100%)",
-              borderTop: "4px solid #B8975A",
-              padding: "3rem 2rem",
-              textAlign: "center",
-              minHeight: "380px",
-              display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center",
-            }}>
-              <div style={{ width: "40px", height: "1px", background: "#B8975A", marginBottom: "2rem" }} />
-              <p style={{ color: "#B8975A", fontSize: ".72rem", letterSpacing: ".2em", textTransform: "uppercase", marginBottom: "1rem" }}>Verónica Perozo</p>
-              <h2 style={{ fontFamily: "var(--font-serif, serif)", color: "#F8F4EE", fontSize: "2rem", fontWeight: 300, lineHeight: 1.2, marginBottom: "1rem" }}>
-                El Cansancio<br />Silencioso
-              </h2>
-              <div style={{ width: "40px", height: "1px", background: "#B8975A", marginTop: "1.5rem" }} />
+            {/* Book cover */}
+            <div style={{ position: "relative", minHeight: "420px", borderTop: "4px solid #B8975A", overflow: "hidden" }}>
+              <Image
+                src="/images/libro-portada.jpeg"
+                alt="El Cansancio Silencioso — Verónica Perozo"
+                fill
+                style={{ objectFit: "cover", objectPosition: "center top" }}
+                sizes="(max-width: 768px) 100vw, 440px"
+                priority
+              />
             </div>
 
             <div>

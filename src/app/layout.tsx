@@ -63,7 +63,12 @@ const personSchema = {
   worksFor: { "@type": "Organization", name: "2JVS Insurance", url: "https://2jvs.com" },
   sameAs: [
     "https://www.instagram.com/veronica.perozo",
+    "https://www.tiktok.com/@VeronicaPerozooficial",
+    "https://www.youtube.com/@VeronicaPerozoOficial",
+    "https://www.facebook.com/Veronica.Perozo",
+    "https://www.linkedin.com/in/veronica-perozov-1a5622141",
     "https://2jvs.com",
+    "https://www.amazon.com/gp/product/B0GZCRG21Q/",
   ],
   knowsAbout: [
     "Seguros de salud", "Marca personal", "Educación financiera",

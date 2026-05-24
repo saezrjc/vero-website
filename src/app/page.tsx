@@ -165,26 +165,50 @@ export default function Home() {
             ¿Lista para construir tu legado?
           </h2>
           <p style={{ color: "#EDE5D8", marginBottom: "2.5rem", lineHeight: 1.8 }}>
-            Escríbeme directamente o sígueme en Instagram.
+            Escríbeme directamente o encuéntrame en redes.
           </p>
-          <div style={{ display: "flex", gap: "1rem", justifyContent: "center", flexWrap: "wrap" }}>
+          <div style={{ display: "flex", gap: "1rem", justifyContent: "center", flexWrap: "wrap", marginBottom: "2rem" }}>
             <a href="mailto:insurance.2jvs@gmail.com" style={{
               background: "#B8975A", color: "#1E1510", padding: ".9rem 2rem",
               fontWeight: 600, fontSize: ".82rem", letterSpacing: ".06em",
               textTransform: "uppercase", textDecoration: "none",
             }}>Enviar email</a>
-            <a href="https://instagram.com/veronica.perozo" target="_blank" rel="noopener noreferrer" style={{
-              border: "1px solid #B8975A", color: "#B8975A", padding: ".9rem 2rem",
-              fontSize: ".82rem", letterSpacing: ".06em",
-              textTransform: "uppercase", textDecoration: "none",
-            }}>@veronica.perozo</a>
+          </div>
+          <div style={{ display: "flex", gap: "1.2rem", justifyContent: "center", flexWrap: "wrap" }}>
+            {[
+              ["Instagram", "https://instagram.com/veronica.perozo"],
+              ["TikTok", "https://www.tiktok.com/@VeronicaPerozooficial"],
+              ["YouTube", "https://www.youtube.com/@VeronicaPerozoOficial"],
+              ["Facebook", "https://www.facebook.com/Veronica.Perozo"],
+              ["LinkedIn", "https://www.linkedin.com/in/veronica-perozov-1a5622141"],
+            ].map(([label, url]) => (
+              <a key={label} href={url} target="_blank" rel="noopener noreferrer" style={{
+                color: "#8B5E3C", fontSize: ".78rem", letterSpacing: ".08em",
+                textTransform: "uppercase", textDecoration: "none",
+                borderBottom: "1px solid #4A3728", paddingBottom: ".1rem",
+              }}>{label}</a>
+            ))}
           </div>
         </div>
       </section>
 
       {/* FOOTER */}
-      <footer style={{ background: "#1A0F08", padding: "2rem", textAlign: "center", borderTop: "1px solid #2E1F15" }}>
-        <p style={{ color: "#8B5E3C", fontSize: ".78rem" }}>© 2026 Verónica Perozo · veronicaperozo.com</p>
+      <footer style={{ background: "#1A0F08", padding: "2.5rem 2rem", textAlign: "center", borderTop: "1px solid #2E1F15" }}>
+        <div style={{ display: "flex", gap: "1.5rem", justifyContent: "center", flexWrap: "wrap", marginBottom: "1rem" }}>
+          {[
+            ["Instagram", "https://instagram.com/veronica.perozo"],
+            ["TikTok", "https://www.tiktok.com/@VeronicaPerozooficial"],
+            ["YouTube", "https://www.youtube.com/@VeronicaPerozoOficial"],
+            ["Facebook", "https://www.facebook.com/Veronica.Perozo"],
+            ["LinkedIn", "https://www.linkedin.com/in/veronica-perozov-1a5622141"],
+          ].map(([label, url]) => (
+            <a key={label} href={url} target="_blank" rel="noopener noreferrer" style={{
+              color: "#4A3728", fontSize: ".72rem", letterSpacing: ".1em",
+              textTransform: "uppercase", textDecoration: "none",
+            }}>{label}</a>
+          ))}
+        </div>
+        <p style={{ color: "#3A2920", fontSize: ".72rem" }}>© 2026 Verónica Perozo · veronicaperozo.com</p>
       </footer>
 
     </main>

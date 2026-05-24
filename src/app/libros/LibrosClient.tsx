@@ -84,11 +84,18 @@ export default function Libros() {
               <p style={{ color: "#4A3728", lineHeight: 1.9, fontSize: "1rem", marginBottom: "2rem" }}>
                 Este libro es la pieza central de autoridad de Verónica. No es autoayuda convencional — es una conversación honesta sobre lo que cuesta sostener una vida sin un sistema que te sostenga a ti.
               </p>
-              <a href="mailto:insurance.2jvs@gmail.com?subject=Quiero El Cansancio Silencioso" style={{
-                display: "inline-block", background: "#B8975A", color: "#1E1510",
-                padding: ".9rem 2rem", fontWeight: 600, fontSize: ".82rem",
-                letterSpacing: ".06em", textTransform: "uppercase", textDecoration: "none",
-              }}>Conseguir el libro →</a>
+              <div style={{ display: "flex", gap: "1rem", flexWrap: "wrap" }}>
+                <a href="https://www.amazon.com/gp/product/B0GZCRG21Q/" target="_blank" rel="noopener noreferrer" style={{
+                  display: "inline-block", background: "#B8975A", color: "#1E1510",
+                  padding: ".9rem 2rem", fontWeight: 600, fontSize: ".82rem",
+                  letterSpacing: ".06em", textTransform: "uppercase", textDecoration: "none",
+                }}>Comprar en Amazon →</a>
+                <a href="mailto:insurance.2jvs@gmail.com?subject=Quiero El Cansancio Silencioso" style={{
+                  display: "inline-block", border: "1px solid #4A3728", color: "#4A3728",
+                  padding: ".9rem 2rem", fontSize: ".82rem",
+                  letterSpacing: ".06em", textTransform: "uppercase", textDecoration: "none",
+                }}>Escribir a Verónica</a>
+              </div>
             </div>
           </motion.div>
         </div>

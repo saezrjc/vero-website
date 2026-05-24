@@ -23,7 +23,8 @@ const bookSchema = {
     url: "https://veronicaperozo.com",
   },
   inLanguage: "es",
-  url: "https://veronicaperozo.com/libros",
+  url: "https://www.amazon.com/gp/product/B0GZCRG21Q/",
+  sameAs: "https://veronicaperozo.com/libros",
   genre: "Self Help",
   description: "La historia de la mujer que sostiene todo por fuera y está agotada por dentro. Una conversación honesta sobre lo que cuesta sostener una vida sin un sistema que te sostenga a ti.",
 };

@@ -57,7 +57,7 @@ export default function SobreMi() {
           <motion.div variants={fade} initial="hidden" whileInView="show" viewport={{ once: true }} transition={{ duration: .7 }}
             style={{ position: "relative", minHeight: "500px", overflow: "hidden" }}>
             <Image
-              src="/images/veronica-vestido-negro.png"
+              src="/images/vero-en-el-sofa2.png"
               alt="Verónica Perozo — Autora venezolana radicada en Florida"
               fill
               style={{ objectFit: "cover", objectPosition: "center top" }}

@@ -2,6 +2,7 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
+import Nav from "@/components/Nav";
 
 const fade = { hidden: { opacity: 0, y: 24 }, show: { opacity: 1, y: 0 } };
 
@@ -9,24 +10,7 @@ export default function Libros() {
   return (
     <main style={{ fontFamily: "var(--font-sans, Inter, system-ui, sans-serif)", paddingTop: "5rem" }}>
 
-      {/* NAV */}
-      <nav style={{
-        position: "fixed", top: 0, left: 0, right: 0, zIndex: 50,
-        padding: "1rem 2rem", display: "flex", justifyContent: "space-between",
-        alignItems: "center", background: "rgba(248,244,238,0.94)",
-        backdropFilter: "blur(8px)", borderBottom: "1px solid #EDE5D8",
-      }}>
-        <Link href="/" style={{ fontFamily: "var(--font-serif, serif)", fontSize: "1.1rem", color: "#4A3728", fontWeight: 400, textDecoration: "none" }}>
-          Verónica Perozo
-        </Link>
-        <div style={{ display: "flex", gap: "1.8rem" }}>
-          {([["Sobre mí", "/sobre-mi"], ["Libros", "/libros"], ["Conferencias", "/conferencias"], ["Blog", "/blog"], ["Prensa", "/prensa"]] as [string, string][]).map(([label, href]) => (
-            <Link key={href} href={href} style={{ color: "#8B5E3C", fontSize: ".82rem", textDecoration: "none", letterSpacing: ".06em", textTransform: "uppercase" }}>
-              {label}
-            </Link>
-          ))}
-        </div>
-      </nav>
+      <Nav />
 
       {/* HERO */}
       <section style={{

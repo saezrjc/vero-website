@@ -97,7 +97,7 @@ export default function SobreMi() {
                 { year: "2015", title: "Llegada a Florida, EE.UU.", desc: "Recomienza desde cero. Estudia el sistema americano, obtiene licencias de seguros y empieza a construir una red de clientes desde la comunidad latina." },
                 { year: "2016–2021", title: "Agente de seguros de vida y salud · Florida", desc: "Asesoramiento especializado en seguros de vida, anualidades y planes de salud. Supervisión de equipos de agentes y optimización de métricas de conversión." },
                 { year: "2021+", title: "Fundadora de agencia de seguros y servicios empresariales", desc: "Dirección general de agencia de seguros de salud, tributación y servicios empresariales para familias latinas en Florida. Cientos de familias atendidas." },
-                { year: "2025–2026", title: "Autora y conferencista · Marca personal", desc: "Publica El Cansancio Silencioso, Sistema de Libertad Financiera, Hábitos Conscientes y Libera tu Niño Interior. Certificada en Marca Personal y Autoridad Digital." },
+                { year: "2025–2026", title: "Autora y conferencista", desc: "Publica El Cansancio Silencioso, Sistema de Libertad Financiera, Hábitos Conscientes y Libera tu Niño Interior. Certificada en Marca Personal y Autoridad Digital." },
                 { year: "2025+", title: "Creadora de Arquitectas de Legado", desc: "Programa de mentoría de 90 días para mujeres que quieren construir una vida con identidad clara, estructura financiera y propósito monetizable." },
               ].map((item) => (
                 <div key={item.year} style={{ display: "grid", gridTemplateColumns: "100px 1fr", gap: "1rem", paddingBottom: "1.5rem", borderBottom: "1px solid #D4C5B2" }}>

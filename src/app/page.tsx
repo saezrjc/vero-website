@@ -30,8 +30,9 @@ export default function Home() {
               Autora · Empresaria · Mentora
             </p>
             <h1 style={{
-              fontFamily: "var(--font-serif, serif)", fontWeight: 300,
-              fontSize: "clamp(2.8rem, 7vw, 6rem)", lineHeight: 1.05,
+              fontFamily: "var(--font-serif, serif)", fontWeight: 700,
+              fontSize: "clamp(3.5rem, 8vw, 7rem)", lineHeight: 1.1,
+              letterSpacing: "-0.02em",
               color: "#F8F4EE", marginBottom: "1.5rem",
             }}>
               Verónica<br />Perozo

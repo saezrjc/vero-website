@@ -42,12 +42,13 @@ export default function Libros() {
             style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "4rem", alignItems: "center" }}>
 
             {/* Book cover */}
-            <div style={{ position: "relative", minHeight: "420px", borderTop: "4px solid #B8975A", overflow: "hidden" }}>
+            <div style={{ borderTop: "4px solid #B8975A", overflow: "hidden" }}>
               <Image
-                src="/images/libro-portada-principal.png"
+                src="/images/libro-portada-final.jpg"
                 alt="El Cansancio Silencioso — Verónica Perozo"
-                fill
-                style={{ objectFit: "cover", objectPosition: "center top" }}
+                width={600}
+                height={962}
+                style={{ width: "100%", height: "auto", display: "block" }}
                 sizes="(max-width: 768px) 100vw, 440px"
                 priority
               />

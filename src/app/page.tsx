@@ -39,7 +39,10 @@ export default function Home() {
             </h1>
             <div style={{ width: "60px", height: "1px", background: "#B8975A", marginBottom: "1.5rem" }} />
             <p style={{ color: "#EDE5D8", fontSize: "clamp(1.1rem, 2.2vw, 1.4rem)", lineHeight: 1.8, marginBottom: "2.5rem" }}>
-              De sobrevivir en silencio a construir con identidad,<br />propósito, ingresos y legado.
+              De sobrevivir en silencio a construir con{" "}
+              <span style={{ color: "#00D4FF", fontWeight: 700 }}>
+                Identidad, Propósito, Ingresos y LEGADO.
+              </span>
             </p>
             <div style={{ display: "flex", gap: "1rem", flexWrap: "wrap" }}>
               <Link href="/conferencias" style={{

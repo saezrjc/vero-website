@@ -31,7 +31,7 @@ export default function Conferencias() {
           <p style={{ color: "#EDE5D8", fontSize: "clamp(.95rem, 2vw, 1.15rem)", lineHeight: 1.8, marginBottom: "2.5rem" }}>
             90 días para dejar de sobrevivir en silencio y empezar a construir una vida con identidad clara, estructura financiera, propósito monetizable y legado.
           </p>
-          <a href="mailto:insurance.2jvs@gmail.com?subject=Quiero información sobre Arquitectas de Legado" style={{
+          <a href="https://veronicaperozo.com/digital-9828" style={{
             display: "inline-block", background: "#B8975A", color: "#1E1510",
             padding: ".9rem 2.5rem", fontWeight: 600, fontSize: ".82rem",
             letterSpacing: ".06em", textTransform: "uppercase", textDecoration: "none",
@@ -144,7 +144,7 @@ export default function Conferencias() {
                 </div>
               ))}
             </div>
-            <a href="mailto:insurance.2jvs@gmail.com?subject=Quiero contratar a Verónica como speaker" style={{
+            <a href="https://wa.me/17863289942?text=Hola%20Ver%C3%B3nica%2C%20me%20interesa%20contratarte%20como%20speaker" target="_blank" rel="noopener noreferrer" style={{
               display: "inline-block", border: "1px solid #4A3728", color: "#4A3728",
               padding: ".9rem 2rem", fontSize: ".82rem", letterSpacing: ".06em",
               textTransform: "uppercase", textDecoration: "none",
@@ -164,7 +164,7 @@ export default function Conferencias() {
             Arquitectas de Legado trabaja con grupos pequeños para garantizar atención real. Escríbenos para saber si hay disponibilidad.
           </p>
           <div style={{ display: "flex", gap: "1rem", justifyContent: "center", flexWrap: "wrap" }}>
-            <a href="mailto:insurance.2jvs@gmail.com?subject=Quiero información sobre Arquitectas de Legado" style={{
+            <a href="https://wa.me/17863289942?text=Hola%20Ver%C3%B3nica%2C%20me%20interesa%20el%20programa%20Arquitectas%20de%20Legado" target="_blank" rel="noopener noreferrer" style={{
               background: "#B8975A", color: "#1E1510", padding: ".9rem 2rem",
               fontWeight: 600, fontSize: ".82rem", letterSpacing: ".06em",
               textTransform: "uppercase", textDecoration: "none",

@@ -1,46 +1,18 @@
 "use client";
 import { motion } from "framer-motion";
-import Link from "next/link";
 import Nav from "@/components/Nav";
 
 const fade = { hidden: { opacity: 0, y: 24 }, show: { opacity: 1, y: 0 } };
 
 const articulos = [
   {
-    slug: "que-es-el-seguro-de-salud-en-estados-unidos",
-    categoria: "Seguros de Salud",
-    titulo: "¿Qué es el seguro de salud en Estados Unidos y por qué lo necesitas?",
-    extracto: "Guía completa para familias latinas que acaban de llegar o que todavía no entienden cómo funciona el sistema de salud americano.",
+    slug: "como-lanzar-tu-negocio-siendo-inmigrante",
+    categoria: "Emprendimiento",
+    titulo: "Cómo lanzar tu primer negocio en EE.UU. siendo latina: la guía que nadie te da",
+    extracto: "Estructura legal, EIN, cuenta bancaria de negocio, impuestos y lo que nadie te explica antes de empezar. Todo lo que necesitas saber para emprender con bases sólidas en suelo americano.",
     fecha: "Mayo 2026",
-    lectura: "7 min",
+    lectura: "10 min",
     destacado: true,
-  },
-  {
-    slug: "diferencia-entre-hmo-y-ppo",
-    categoria: "Seguros de Salud",
-    titulo: "HMO vs PPO: ¿cuál plan de salud te conviene?",
-    extracto: "La diferencia entre los dos tipos de seguro más comunes en Florida explicada sin términos técnicos para que elijas lo que realmente necesitas.",
-    fecha: "Mayo 2026",
-    lectura: "5 min",
-    destacado: false,
-  },
-  {
-    slug: "open-enrollment-florida-2026",
-    categoria: "Seguros de Salud",
-    titulo: "Open Enrollment 2026: fechas clave y cómo inscribirse sin cometer errores",
-    extracto: "El período de inscripción abierta cierra antes de lo que crees. Aquí tienes las fechas, los errores más comunes y cómo evitar quedarte sin cobertura.",
-    fecha: "Abril 2026",
-    lectura: "6 min",
-    destacado: false,
-  },
-  {
-    slug: "medicaid-vs-marketplace-florida",
-    categoria: "Seguros de Salud",
-    titulo: "Medicaid o Marketplace: cómo saber cuál te corresponde como inmigrante en Florida",
-    extracto: "Muchas familias latinas califican para Medicaid y no lo saben. Otras están en Medicaid y podrían tener mejor cobertura en el Marketplace. Aquí te explico cómo saberlo.",
-    fecha: "Abril 2026",
-    lectura: "8 min",
-    destacado: false,
   },
   {
     slug: "presupuesto-familiar-inmigrante-eeuu",
@@ -49,6 +21,15 @@ const articulos = [
     extracto: "No se trata de recortar gastos. Se trata de entender a dónde va tu dinero y tomar decisiones conscientes. Sistema paso a paso para familias latinas.",
     fecha: "Marzo 2026",
     lectura: "9 min",
+    destacado: true,
+  },
+  {
+    slug: "cansancio-silencioso-mujer-latina",
+    categoria: "Bienestar y Liderazgo",
+    titulo: "El cansancio silencioso: por qué las mujeres latinas estamos agotadas sin permiso para decirlo",
+    extracto: "Sostienes la casa, el trabajo, los hijos, la pareja y a veces a tu familia en el país de origen. Y encima se espera que estés disponible. Esto tiene nombre.",
+    fecha: "Febrero 2026",
+    lectura: "6 min",
     destacado: true,
   },
   {
@@ -68,15 +49,6 @@ const articulos = [
     fecha: "Febrero 2026",
     lectura: "8 min",
     destacado: false,
-  },
-  {
-    slug: "cansancio-silencioso-mujer-latina",
-    categoria: "Bienestar y Liderazgo",
-    titulo: "El cansancio silencioso: por qué las mujeres latinas estamos agotadas sin permiso para decirlo",
-    extracto: "Sostienes la casa, el trabajo, los hijos, la pareja y a veces a tu familia en el país de origen. Y encima se espera que estés disponible. Esto tiene nombre.",
-    fecha: "Febrero 2026",
-    lectura: "6 min",
-    destacado: true,
   },
   {
     slug: "liderazgo-femenino-diaspora-latina",
@@ -100,18 +72,9 @@ const articulos = [
     slug: "emprender-en-eeuu-siendo-latina",
     categoria: "Emprendimiento",
     titulo: "Emprender en EE.UU. siendo latina: lo que nadie te dice antes de empezar",
-    extracto: "Las reglas del juego son diferentes. El sistema fiscal, las licencias, los contratos, el seguro de negocio — hay cosas que necesitas saber antes de que cuesten caro.",
+    extracto: "Las reglas del juego son diferentes. El sistema fiscal, las licencias, los contratos, la estructura de tu negocio — hay cosas que necesitas saber antes de que cuesten caro.",
     fecha: "Diciembre 2025",
     lectura: "10 min",
-    destacado: false,
-  },
-  {
-    slug: "seguro-de-vida-familia-latina",
-    categoria: "Seguros de Salud",
-    titulo: "Seguro de vida para familias latinas: por qué no puedes seguir posponiendo esta conversación",
-    extracto: "El seguro de vida no es para morir — es para que los que te quieren puedan seguir viviendo si te pasa algo. Esta conversación puede esperar, pero sus consecuencias no.",
-    fecha: "Diciembre 2025",
-    lectura: "5 min",
     destacado: false,
   },
   {
@@ -133,15 +96,6 @@ const articulos = [
     destacado: false,
   },
   {
-    slug: "dentista-seguro-salud-florida",
-    categoria: "Seguros de Salud",
-    titulo: "¿El seguro de salud cubre el dentista? Esto es lo que sí y lo que no en Florida",
-    extracto: "Una de las preguntas más frecuentes de familias latinas. La respuesta corta: depende. La respuesta larga — y útil — está aquí.",
-    fecha: "Octubre 2025",
-    lectura: "4 min",
-    destacado: false,
-  },
-  {
     slug: "independencia-financiera-mujer-latina",
     categoria: "Finanzas Personales",
     titulo: "Independencia financiera para la mujer latina: no es un sueño, es un sistema",
@@ -151,23 +105,22 @@ const articulos = [
     destacado: false,
   },
   {
-    slug: "primera-vez-sin-seguro-eeuu",
-    categoria: "Seguros de Salud",
-    titulo: "Primera vez sin seguro en EE.UU.: qué hacer y a dónde ir si te enfermas",
-    extracto: "Las urgencias, los centros comunitarios, las clínicas de bajo costo — hay opciones. Pero necesitas saber cuáles existen antes de que las necesites.",
-    fecha: "Septiembre 2025",
-    lectura: "5 min",
+    slug: "marca-personal-emprendedora-latina",
+    categoria: "Emprendimiento",
+    titulo: "Marca personal para la emprendedora latina: cómo construir autoridad siendo inmigrante",
+    extracto: "Tu historia de inmigrante no es un obstáculo — es tu diferenciador más poderoso. Así se construye una marca personal que convierte en oportunidades reales.",
+    fecha: "Octubre 2025",
+    lectura: "8 min",
     destacado: false,
   },
 ];
 
-const categorias = ["Todos", "Seguros de Salud", "Finanzas Personales", "Bienestar y Liderazgo", "Emprendimiento"];
+const categorias = ["Todos", "Emprendimiento", "Finanzas Personales", "Bienestar y Liderazgo"];
 
 const coloresCategoria: Record<string, string> = {
-  "Seguros de Salud": "#B8975A",
+  "Emprendimiento": "#B8975A",
   "Finanzas Personales": "#4A3728",
   "Bienestar y Liderazgo": "#8B5E3C",
-  "Emprendimiento": "#2E1F15",
 };
 
 export default function Blog() {
@@ -197,7 +150,7 @@ export default function Blog() {
           </h1>
           <div style={{ width: "60px", height: "1px", background: "#B8975A", margin: "0 auto 1.5rem" }} />
           <p style={{ color: "#EDE5D8", fontSize: "clamp(.95rem, 2vw, 1.1rem)", lineHeight: 1.8 }}>
-            Seguros, finanzas, emprendimiento y bienestar — explicados por alguien que lo vivió primero.
+            Emprendimiento, Finanzas, Bienestar y Liderazgo — explicados por alguien que lo vivió primero.
           </p>
         </motion.div>
       </section>
@@ -261,13 +214,13 @@ export default function Blog() {
             Una guía nueva cada semana.
           </h2>
           <p style={{ color: "#4A3728", lineHeight: 1.8, marginBottom: "2.5rem" }}>
-            Seguros, finanzas y herramientas reales para mujeres latinas en EE.UU. Sin spam.
+            Emprendimiento, finanzas y herramientas reales para mujeres latinas en EE.UU. Sin spam.
           </p>
-          <a href="mailto:insurance.2jvs@gmail.com?subject=Quiero recibir los artículos de Verónica" style={{
+          <a href="https://wa.me/17863289942?text=Hola%20Ver%C3%B3nica%2C%20quiero%20recibir%20tus%20art%C3%ADculos%20y%20recursos" target="_blank" rel="noopener noreferrer" style={{
             display: "inline-block", background: "#1E1510", color: "#F8F4EE",
             padding: ".9rem 2.5rem", fontWeight: 600, fontSize: ".82rem",
             letterSpacing: ".06em", textTransform: "uppercase", textDecoration: "none",
-          }}>Suscribirme →</a>
+          }}>Escribir a Verónica →</a>
         </div>
       </section>
 

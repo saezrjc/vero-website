@@ -26,30 +26,30 @@ export default function Home() {
           {/* Texto */}
           <motion.div variants={fade} initial="hidden" animate="show" transition={{ duration: .8 }}
             style={{ paddingBottom: "4rem" }}>
-            <p style={{ color: "#B8975A", fontSize: ".78rem", letterSpacing: ".2em", textTransform: "uppercase", marginBottom: "1.5rem" }}>
+            <p style={{ color: "#B8975A", fontSize: "1rem", letterSpacing: ".2em", textTransform: "uppercase", marginBottom: "1.5rem" }}>
               Autora · Empresaria · Mentora
             </p>
             <h1 style={{
               fontFamily: "var(--font-serif, serif)", fontWeight: 700,
-              fontSize: "clamp(3.5rem, 8vw, 7rem)", lineHeight: 1.1,
+              fontSize: "clamp(4.5rem, 9vw, 8.5rem)", lineHeight: 1.05,
               letterSpacing: "-0.02em",
               color: "#F8F4EE", marginBottom: "1.5rem",
             }}>
               Verónica<br />Perozo
             </h1>
             <div style={{ width: "60px", height: "1px", background: "#B8975A", marginBottom: "1.5rem" }} />
-            <p style={{ color: "#EDE5D8", fontSize: "clamp(.95rem, 2vw, 1.15rem)", lineHeight: 1.8, marginBottom: "2.5rem" }}>
+            <p style={{ color: "#EDE5D8", fontSize: "clamp(1.1rem, 2.2vw, 1.4rem)", lineHeight: 1.8, marginBottom: "2.5rem" }}>
               De sobrevivir en silencio a construir con identidad,<br />propósito, ingresos y legado.
             </p>
             <div style={{ display: "flex", gap: "1rem", flexWrap: "wrap" }}>
               <Link href="/conferencias" style={{
-                background: "#B8975A", color: "#1E1510", padding: ".9rem 2rem",
-                fontWeight: 600, fontSize: ".82rem", letterSpacing: ".06em",
+                background: "#B8975A", color: "#1E1510", padding: "1rem 2.2rem",
+                fontWeight: 600, fontSize: "1rem", letterSpacing: ".06em",
                 textTransform: "uppercase", textDecoration: "none", display: "inline-block",
               }}>Arquitectas de Legado</Link>
               <Link href="/libros" style={{
-                border: "1px solid #B8975A", color: "#B8975A", padding: ".9rem 2rem",
-                fontWeight: 400, fontSize: ".82rem", letterSpacing: ".06em",
+                border: "1px solid #B8975A", color: "#B8975A", padding: "1rem 2.2rem",
+                fontWeight: 400, fontSize: "1rem", letterSpacing: ".06em",
                 textTransform: "uppercase", textDecoration: "none", display: "inline-block",
               }}>El Cansancio Silencioso</Link>
             </div>

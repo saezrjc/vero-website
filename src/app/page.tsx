@@ -20,7 +20,7 @@ export default function Home() {
       }}>
         <div style={{
           maxWidth: "1100px", width: "100%",
-          display: "grid", gridTemplateColumns: "1fr clamp(280px, 38vw, 480px)",
+          display: "grid", gridTemplateColumns: "1fr clamp(365px, 50vw, 625px)",
           gap: "clamp(2rem, 5vw, 5rem)", alignItems: "flex-end",
         }}>
           {/* Texto */}
@@ -57,7 +57,7 @@ export default function Home() {
           {/* Imagen Verónica */}
           <motion.div
             variants={fade} initial="hidden" animate="show" transition={{ duration: 1, delay: .3 }}
-            style={{ position: "relative", height: "clamp(420px, 65vh, 640px)", alignSelf: "flex-end" }}
+            style={{ position: "relative", height: "clamp(545px, 85vh, 830px)", alignSelf: "flex-end" }}
           >
             <Image
               src="/images/veronica-hero-nobg.png"
@@ -65,7 +65,7 @@ export default function Home() {
               fill
               priority
               style={{ objectFit: "contain", objectPosition: "bottom center" }}
-              sizes="(max-width: 768px) 90vw, 480px"
+              sizes="(max-width: 768px) 90vw, 625px"
             />
           </motion.div>
         </div>

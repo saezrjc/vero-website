@@ -18,11 +18,12 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "Verónica Perozo — Autora · Empresaria · Mentora",
   description:
-    "Verónica Perozo es autora de El Cansancio Silencioso, fundadora de 2JVS Insurance y creadora de Arquitectas de Legado. Ayuda a mujeres latinas a ordenar su vida, monetizar su historia y construir su legado.",
+    "Verónica Perozo es autora de El Cansancio Silencioso y creadora de Arquitectas de Legado. Empresaria venezolana radicada en Florida. Ayuda a mujeres latinas a ordenar su vida, monetizar su historia y construir su legado.",
   keywords: [
     "Verónica Perozo", "Arquitectas de Legado", "El Cansancio Silencioso",
-    "mentora mujeres latinas", "agente de seguros Florida", "2JVS Insurance",
-    "marca personal latina", "emprendimiento femenino",
+    "mentora mujeres latinas", "seguros de salud Florida",
+    "marca personal latina", "emprendimiento femenino", "mujeres venezolanas Florida",
+    "bienestar emocional", "educación financiera latina",
   ],
   authors: [{ name: "Verónica Perozo", url: "https://veronicaperozo.com" }],
   creator: "Verónica Perozo",
@@ -34,7 +35,7 @@ export const metadata: Metadata = {
     siteName: "Verónica Perozo",
     title: "Verónica Perozo — Autora · Empresaria · Mentora",
     description:
-      "Autora de El Cansancio Silencioso. Fundadora de 2JVS Insurance. Creadora de Arquitectas de Legado.",
+      "Autora de El Cansancio Silencioso. Empresaria en la industria de seguros de salud en Florida. Creadora de Arquitectas de Legado.",
   },
   twitter: {
     card: "summary_large_image",
@@ -57,22 +58,31 @@ const personSchema = {
   url: "https://veronicaperozo.com",
   jobTitle: "Autora, Empresaria y Mentora",
   description:
-    "Verónica Perozo es autora, empresaria venezolana radicada en Florida y fundadora de 2JVS Insurance. Creadora del programa Arquitectas de Legado para mujeres latinas.",
+    "Verónica Perozo es autora, empresaria venezolana radicada en Florida y creadora del programa Arquitectas de Legado. Especializada en bienestar emocional, educación financiera y desarrollo personal para mujeres latinas.",
   knowsLanguage: ["es", "en"],
   nationality: { "@type": "Country", name: "Venezuela" },
-  worksFor: { "@type": "Organization", name: "2JVS Insurance", url: "https://2jvs.com" },
+  gender: "Female",
+  birthPlace: { "@type": "Place", name: "Venezuela" },
+  alumniOf: [
+    { "@type": "EducationalOrganization", name: "Universidad José María Vargas", description: "Licenciatura en Administración, Mención Gerencia Empresarial" },
+    { "@type": "EducationalOrganization", name: "Universidad Nacional Experimental Rafael María Baralt (UNERMB)", description: "Estudios en Gerencia de Recursos Humanos" },
+    { "@type": "EducationalOrganization", name: "Universidad del Zulia (LUZ)", description: "Programa Avanzado en Psiconeuroinmunología · Especialización en Psiconeurolingüística · Organizaciones Inteligentes" },
+    { "@type": "EducationalOrganization", name: "Instituto Tecnológico Universitario Monseñor de Talavera", description: "Técnico Superior en Administración" },
+  ],
   sameAs: [
     "https://www.instagram.com/veronica.perozo",
     "https://www.tiktok.com/@VeronicaPerozooficial",
     "https://www.youtube.com/@VeronicaPerozoOficial",
     "https://www.facebook.com/Veronica.Perozo",
     "https://www.linkedin.com/in/veronica-perozov-1a5622141",
-    "https://2jvs.com",
     "https://www.amazon.com/gp/product/B0GZCRG21Q/",
   ],
   knowsAbout: [
     "Seguros de salud", "Marca personal", "Educación financiera",
     "Emprendimiento femenino", "Legado familiar", "Mentoría",
+    "Programación Neurolingüística", "Psiconeuroinmunología",
+    "Desarrollo Organizacional", "Bienestar emocional",
+    "Recursos Humanos", "Gestión de equipos", "Coaching de vida",
   ],
 };
 

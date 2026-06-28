@@ -44,7 +44,7 @@ export default function Libros() {
             {/* Book cover */}
             <div style={{ position: "relative", minHeight: "420px", borderTop: "4px solid #B8975A", overflow: "hidden" }}>
               <Image
-                src="/images/libro-portada.jpeg"
+                src="/images/libro-portada-principal.png"
                 alt="El Cansancio Silencioso — Verónica Perozo"
                 fill
                 style={{ objectFit: "cover", objectPosition: "center top" }}
@@ -89,19 +89,25 @@ export default function Libros() {
             Guías que funcionan en la vida real.
           </h2>
 
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: "2rem" }}>
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))", gap: "2rem" }}>
             {[
               {
-                sub: "Protocolo de Transformación 1%",
-                title: "Guía de Hábitos Conscientes",
+                sub: "E-Book · 2025",
+                title: "Sistema de Libertad Financiera",
+                desc: "Un mapa claro para que tu dinero trabaje para ti. Sistema práctico de educación financiera diseñado para mujeres que quieren dejar de sobrevivir y empezar a construir.",
+                bullets: ["Diagnóstico financiero real", "Plan de deudas estructurado", "Fundamentos de inversión", "Sistema de ahorro mensual"],
+              },
+              {
+                sub: "Guía · 2025 — Protocolo de Transformación 1%",
+                title: "Hábitos Conscientes",
                 desc: "Metodología de micro-hábitos para construir disciplina diaria, orden financiero y estabilidad desde lo pequeño. Porque el 1% repetido cambia todo.",
                 bullets: ["Rutinas de alto impacto", "Control financiero semanal", "Sistema de prioridades", "Seguimiento de progreso"],
               },
               {
-                sub: "Plan Financiero 30 Días",
-                title: "Del Caos a la Claridad",
-                desc: "Sistema en 4 etapas para dejar de huirle a los números y empezar a usarlos como herramienta de construcción. Claridad, estrategia, acción y control.",
-                bullets: ["Diagnóstico financiero real", "Presupuesto funcional", "Plan de deudas e inversión", "Tablero de control mensual"],
+                sub: "Guía · 2025",
+                title: "Libera tu Niño Interior",
+                desc: "Herramienta de trabajo emocional para dejar ir las creencias limitantes heredadas y abrir espacio a la abundancia. La puerta interna que muchas mujeres no saben que está cerrada.",
+                bullets: ["Trabajo emocional profundo", "Reprogramación de creencias", "Ejercicios de liberación", "Apertura a la abundancia"],
               },
             ].map((book) => (
               <motion.div key={book.title} variants={fade} initial="hidden" whileInView="show" viewport={{ once: true }}

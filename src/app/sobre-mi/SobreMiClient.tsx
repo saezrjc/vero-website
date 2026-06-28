@@ -55,7 +55,7 @@ export default function SobreMi() {
             </h2>
 
             <p style={{ color: "#4A3728", lineHeight: 1.95, fontSize: "1.05rem", marginBottom: "1.5rem" }}>
-              Venezolana, inmigrante, madre, con una carrera construida en Venezuela — administración de empresas, recursos humanos, años trabajando en PDVSA — y todo por reconstruir. No vine con un plan perfecto. Vine con la certeza de que algo tenía que cambiar.
+              Venezolana, inmigrante, madre, con una carrera construida en Venezuela — administración de empresas, recursos humanos, años en la industria petrolera venezolana — y todo por reconstruir. No vine con un plan perfecto. Vine con la certeza de que algo tenía que cambiar.
             </p>
 
             <p style={{ color: "#4A3728", lineHeight: 1.95, fontSize: "1.05rem", marginBottom: "1.5rem" }}>
@@ -67,7 +67,7 @@ export default function SobreMi() {
             </p>
 
             <p style={{ color: "#4A3728", lineHeight: 1.95, fontSize: "1.05rem", marginBottom: "3rem" }}>
-              Lo que comenzó como una forma de salir adelante se convirtió en 2JVS Insurance, una agencia construida con identidad propia. Después vino el libro, las guías, y finalmente <em>Arquitectas de Legado</em> — el programa que habría cambiado todo si yo lo hubiera tenido al llegar.
+              Lo que comenzó como una forma de salir adelante se convirtió en una agencia de seguros de salud construida con identidad propia. Después vino el libro, las guías, y finalmente <em>Arquitectas de Legado</em> — el programa que habría cambiado todo si yo lo hubiera tenido al llegar.
             </p>
 
             <div style={{ borderLeft: "2px solid #B8975A", paddingLeft: "1.5rem", marginBottom: "3rem" }}>
@@ -91,11 +91,14 @@ export default function SobreMi() {
 
             <div style={{ display: "grid", gap: "1.5rem" }}>
               {[
-                { year: "Venezuela", title: "Administración de Empresas · Recursos Humanos", desc: "Años de carrera corporativa, incluyendo experiencia en PDVSA. Gestión de equipos, procesos administrativos y liderazgo organizacional." },
-                { year: "2015", title: "Llegada a Florida, EE.UU.", desc: "Recomienza desde cero. Estudia el sistema americano, obtiene licencias y empieza a construir una red de clientes desde la comunidad latina." },
-                { year: "2018+", title: "Fundadora de 2JVS Insurance", desc: "Agencia de seguros de salud especializada en familias latinas en Florida. Cientos de familias atendidas." },
-                { year: "2024", title: "Autora publicada", desc: "Publica El Cansancio Silencioso, Guía de Hábitos Conscientes y Del Caos a la Claridad — materiales educativos para mujeres latinas." },
-                { year: "2025", title: "Creadora de Arquitectas de Legado", desc: "Lanza su programa de mentoría de 90 días para mujeres que quieren construir una vida con identidad clara, estructura financiera y propósito monetizable." },
+                { year: "1994–2004", title: "Carrera administrativa · Sector empresarial y energético, Venezuela", desc: "Administración de contratos corporativos, coordinación de inventarios, planificación de proyectos y operaciones logísticas. Base profesional construida en el sector industrial venezolano." },
+                { year: "2004–2015", title: "Liderazgo en Recursos Humanos · Industria petrolera, Venezuela", desc: "Líder de Planificación de RR.HH. y Administración de Personal. Gestión estratégica de equipos, presupuesto y contratos en el sector energético venezolano." },
+                { year: "2006–2013", title: "Formación ejecutiva · Universidad del Zulia (LUZ)", desc: "Especialización en Psiconeurolingüística, Programa Avanzado en Psiconeuroinmunología y Desarrollo de Organizaciones Inteligentes." },
+                { year: "2015", title: "Llegada a Florida, EE.UU.", desc: "Recomienza desde cero. Estudia el sistema americano, obtiene licencias de seguros y empieza a construir una red de clientes desde la comunidad latina." },
+                { year: "2016–2021", title: "Agente de seguros de vida y salud · Florida", desc: "Asesoramiento especializado en seguros de vida, anualidades y planes de salud. Supervisión de equipos de agentes y optimización de métricas de conversión." },
+                { year: "2021+", title: "Fundadora de agencia de seguros y servicios empresariales", desc: "Dirección general de agencia de seguros de salud, tributación y servicios empresariales para familias latinas en Florida. Cientos de familias atendidas." },
+                { year: "2025–2026", title: "Autora y conferencista · Marca personal", desc: "Publica El Cansancio Silencioso, Sistema de Libertad Financiera, Hábitos Conscientes y Libera tu Niño Interior. Certificada en Marca Personal y Autoridad Digital." },
+                { year: "2025+", title: "Creadora de Arquitectas de Legado", desc: "Programa de mentoría de 90 días para mujeres que quieren construir una vida con identidad clara, estructura financiera y propósito monetizable." },
               ].map((item) => (
                 <div key={item.year} style={{ display: "grid", gridTemplateColumns: "100px 1fr", gap: "1rem", paddingBottom: "1.5rem", borderBottom: "1px solid #D4C5B2" }}>
                   <p style={{ color: "#B8975A", fontSize: ".82rem", fontWeight: 600, letterSpacing: ".05em", paddingTop: ".2rem" }}>{item.year}</p>

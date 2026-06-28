@@ -51,7 +51,7 @@ export default function Home() {
       {/* STATS */}
       <section style={{ background: "#EDE5D8", padding: "5rem 2rem" }}>
         <div style={{ maxWidth: "900px", margin: "0 auto", display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(180px, 1fr))", gap: "3rem", textAlign: "center" }}>
-          {([["30+", "Años de experiencia"], ["Cientos", "Familias atendidas"], ["3+", "Libros y guías publicados"], ["1", "Programa de mentoría"]] as [string, string][]).map(([value, label]) => (
+          {([["28+", "Años de experiencia"], ["Cientos", "Familias atendidas"], ["4+", "Libros y guías publicados"], ["1", "Programa de mentoría"]] as [string, string][]).map(([value, label]) => (
             <div key={label}>
               <p style={{ fontFamily: "var(--font-serif, serif)", fontSize: "clamp(2.5rem, 6vw, 4rem)", fontWeight: 300, color: "#4A3728" }}>{value}</p>
               <p style={{ fontSize: ".78rem", letterSpacing: ".1em", textTransform: "uppercase", color: "#8B5E3C", marginTop: ".4rem" }}>{label}</p>
@@ -66,7 +66,7 @@ export default function Home() {
           <motion.div variants={fade} initial="hidden" whileInView="show" viewport={{ once: true }} transition={{ duration: .7 }}
             style={{ position: "relative", minHeight: "500px", overflow: "hidden" }}>
             <Image
-              src="/images/vero-en-el-sofa.jpeg"
+              src="/images/vero-diseno-12.png"
               alt="Verónica Perozo — Autora y mentora de mujeres latinas"
               fill
               style={{ objectFit: "cover", objectPosition: "center top" }}
@@ -80,7 +80,7 @@ export default function Home() {
               <em>Te hablo desde una vida que tuve que ordenar.</em>
             </h2>
             <p style={{ color: "#4A3728", lineHeight: 1.9, fontSize: "1rem", marginBottom: "1rem" }}>
-              Llegué a Florida en septiembre de 2015. Venezolana, inmigrante, madre, con una carrera construida en Venezuela — administración, recursos humanos, años en PDVSA — y todo por reconstruir.
+              Llegué a Florida en septiembre de 2015. Venezolana, inmigrante, madre, con una carrera construida en Venezuela — administración de empresas, recursos humanos, años en la industria petrolera venezolana — y todo por reconstruir.
             </p>
             <p style={{ color: "#4A3728", lineHeight: 1.9, fontSize: "1rem", marginBottom: "2rem" }}>
               Lo que comenzó como una forma de salir adelante se convirtió en una agencia de seguros, un libro publicado, materiales educativos y un programa de mentoría para mujeres que se parecen a la mujer que yo fui.
@@ -101,9 +101,9 @@ export default function Home() {
           </h2>
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))", gap: "2rem" }}>
             {[
-              { title: "El Cansancio Silencioso", sub: "Libro principal", desc: "La historia de la mujer que sostiene todo por fuera y está agotada por dentro. Pieza central de autoridad de Verónica." },
-              { title: "Guía de Hábitos Conscientes", sub: "Protocolo de Transformación 1%", desc: "Metodología de micro-hábitos, disciplina diaria, orden financiero y construcción de estabilidad." },
-              { title: "Del Caos a la Claridad", sub: "Plan Financiero 30 Días", desc: "Sistema en 4 etapas: claridad, estrategia, acción y control. Para dejar de huirle a los números." },
+              { title: "El Cansancio Silencioso", sub: "Libro · 2026", desc: "La historia de la mujer que sostiene todo por fuera y está agotada por dentro. Disponible en Amazon." },
+              { title: "Sistema de Libertad Financiera", sub: "E-Book · 2025", desc: "Un mapa claro para que tu dinero trabaje para ti. Educación financiera práctica para mujeres latinas." },
+              { title: "Hábitos Conscientes", sub: "Guía · Protocolo de Transformación 1%", desc: "Metodología de micro-hábitos para construir disciplina diaria, orden financiero y estabilidad." },
             ].map((book) => (
               <motion.div key={book.title} variants={fade} initial="hidden" whileInView="show" viewport={{ once: true }}
                 style={{ padding: "2rem", background: "#2E1F15", borderTop: "2px solid #B8975A" }}>

@@ -16,36 +16,59 @@ export default function Home() {
       <section style={{
         minHeight: "100vh", background: "linear-gradient(160deg, #1E1510 0%, #2E1F15 60%, #1A0F08 100%)",
         display: "flex", alignItems: "center", justifyContent: "center",
-        padding: "8rem 2rem 4rem", textAlign: "center",
+        padding: "8rem 4rem 0rem", overflow: "hidden",
       }}>
-        <motion.div variants={fade} initial="hidden" animate="show" transition={{ duration: .8 }} style={{ maxWidth: "720px" }}>
-          <p style={{ color: "#B8975A", fontSize: ".78rem", letterSpacing: ".2em", textTransform: "uppercase", marginBottom: "1.5rem" }}>
-            Autora · Empresaria · Mentora
-          </p>
-          <h1 style={{
-            fontFamily: "var(--font-serif, serif)", fontWeight: 300,
-            fontSize: "clamp(3rem, 8vw, 6.5rem)", lineHeight: 1.05,
-            color: "#F8F4EE", marginBottom: "1.5rem",
-          }}>
-            Verónica<br />Perozo
-          </h1>
-          <div style={{ width: "60px", height: "1px", background: "#B8975A", margin: "0 auto 1.5rem" }} />
-          <p style={{ color: "#EDE5D8", fontSize: "clamp(.95rem, 2vw, 1.15rem)", lineHeight: 1.8, marginBottom: "2.5rem" }}>
-            De sobrevivir en silencio a construir con identidad,<br />propósito, ingresos y legado.
-          </p>
-          <div style={{ display: "flex", gap: "1rem", justifyContent: "center", flexWrap: "wrap" }}>
-            <Link href="/conferencias" style={{
-              background: "#B8975A", color: "#1E1510", padding: ".9rem 2rem",
-              fontWeight: 600, fontSize: ".82rem", letterSpacing: ".06em",
-              textTransform: "uppercase", textDecoration: "none", display: "inline-block",
-            }}>Arquitectas de Legado</Link>
-            <Link href="/libros" style={{
-              border: "1px solid #B8975A", color: "#B8975A", padding: ".9rem 2rem",
-              fontWeight: 400, fontSize: ".82rem", letterSpacing: ".06em",
-              textTransform: "uppercase", textDecoration: "none", display: "inline-block",
-            }}>El Cansancio Silencioso</Link>
-          </div>
-        </motion.div>
+        <div style={{
+          maxWidth: "1100px", width: "100%",
+          display: "grid", gridTemplateColumns: "1fr clamp(280px, 38vw, 480px)",
+          gap: "clamp(2rem, 5vw, 5rem)", alignItems: "flex-end",
+        }}>
+          {/* Texto */}
+          <motion.div variants={fade} initial="hidden" animate="show" transition={{ duration: .8 }}
+            style={{ paddingBottom: "4rem" }}>
+            <p style={{ color: "#B8975A", fontSize: ".78rem", letterSpacing: ".2em", textTransform: "uppercase", marginBottom: "1.5rem" }}>
+              Autora · Empresaria · Mentora
+            </p>
+            <h1 style={{
+              fontFamily: "var(--font-serif, serif)", fontWeight: 300,
+              fontSize: "clamp(2.8rem, 7vw, 6rem)", lineHeight: 1.05,
+              color: "#F8F4EE", marginBottom: "1.5rem",
+            }}>
+              Verónica<br />Perozo
+            </h1>
+            <div style={{ width: "60px", height: "1px", background: "#B8975A", marginBottom: "1.5rem" }} />
+            <p style={{ color: "#EDE5D8", fontSize: "clamp(.95rem, 2vw, 1.15rem)", lineHeight: 1.8, marginBottom: "2.5rem" }}>
+              De sobrevivir en silencio a construir con identidad,<br />propósito, ingresos y legado.
+            </p>
+            <div style={{ display: "flex", gap: "1rem", flexWrap: "wrap" }}>
+              <Link href="/conferencias" style={{
+                background: "#B8975A", color: "#1E1510", padding: ".9rem 2rem",
+                fontWeight: 600, fontSize: ".82rem", letterSpacing: ".06em",
+                textTransform: "uppercase", textDecoration: "none", display: "inline-block",
+              }}>Arquitectas de Legado</Link>
+              <Link href="/libros" style={{
+                border: "1px solid #B8975A", color: "#B8975A", padding: ".9rem 2rem",
+                fontWeight: 400, fontSize: ".82rem", letterSpacing: ".06em",
+                textTransform: "uppercase", textDecoration: "none", display: "inline-block",
+              }}>El Cansancio Silencioso</Link>
+            </div>
+          </motion.div>
+
+          {/* Imagen Verónica */}
+          <motion.div
+            variants={fade} initial="hidden" animate="show" transition={{ duration: 1, delay: .3 }}
+            style={{ position: "relative", height: "clamp(420px, 65vh, 640px)", alignSelf: "flex-end" }}
+          >
+            <Image
+              src="/images/veronica-hero-nobg.png"
+              alt="Verónica Perozo — Autora, empresaria y mentora"
+              fill
+              priority
+              style={{ objectFit: "contain", objectPosition: "bottom center" }}
+              sizes="(max-width: 768px) 90vw, 480px"
+            />
+          </motion.div>
+        </div>
       </section>
 
       {/* STATS */}

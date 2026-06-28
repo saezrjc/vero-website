@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Cormorant_Garamond, Inter } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 
 const cormorant = Cormorant_Garamond({
@@ -98,6 +99,12 @@ export default function RootLayout({
         />
       </head>
       <body className="min-h-full flex flex-col">{children}</body>
+      <Script
+        src="https://widgets.leadconnectorhq.com/loader.js"
+        data-resources-url="https://widgets.leadconnectorhq.com/chat-widget/loader.js"
+        data-widget-id="6a4084a7a3d7dca49764c7cd"
+        strategy="afterInteractive"
+      />
     </html>
   );
 }

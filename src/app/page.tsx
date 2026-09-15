@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 import Nav from "@/components/Nav";
+import ContactForm from "@/components/ContactForm";
 
 const fade = { hidden: { opacity: 0, y: 28 }, show: { opacity: 1, y: 0 } };
 
@@ -180,23 +181,17 @@ export default function Home() {
       </section>
 
       {/* CONTACTO */}
-      <section id="contacto" style={{ background: "#1E1510", padding: "6rem 2rem", textAlign: "center" }}>
-        <div style={{ maxWidth: "600px", margin: "0 auto" }}>
+      <section id="contacto" style={{ background: "#1E1510", padding: "6rem 2rem" }}>
+        <div style={{ maxWidth: "600px", margin: "0 auto", textAlign: "center" }}>
           <p style={{ color: "#B8975A", fontSize: ".78rem", letterSpacing: ".2em", textTransform: "uppercase", marginBottom: "1rem" }}>Conversemos</p>
           <h2 style={{ fontFamily: "var(--font-serif, serif)", fontWeight: 300, fontSize: "clamp(1.8rem, 4vw, 3rem)", color: "#F8F4EE", marginBottom: "1rem" }}>
             ¿Lista para construir tu legado?
           </h2>
           <p style={{ color: "#EDE5D8", marginBottom: "2.5rem", lineHeight: 1.8 }}>
-            Escríbeme directamente o encuéntrame en redes.
+            Escríbeme directamente y te respondo en 24–48 horas.
           </p>
-          <div style={{ display: "flex", gap: "1rem", justifyContent: "center", flexWrap: "wrap", marginBottom: "2rem" }}>
-            <a href="mailto:insurance.2jvs@gmail.com" style={{
-              background: "#B8975A", color: "#1E1510", padding: ".9rem 2rem",
-              fontWeight: 600, fontSize: ".82rem", letterSpacing: ".06em",
-              textTransform: "uppercase", textDecoration: "none",
-            }}>Enviar email</a>
-          </div>
-          <div style={{ display: "flex", gap: "1.2rem", justifyContent: "center", flexWrap: "wrap" }}>
+          <ContactForm />
+          <div style={{ display: "flex", gap: "1.2rem", justifyContent: "center", flexWrap: "wrap", marginTop: "2.5rem" }}>
             {[
               ["Instagram", "https://instagram.com/veronica.perozo"],
               ["TikTok", "https://www.tiktok.com/@VeronicaPerozooficial"],
